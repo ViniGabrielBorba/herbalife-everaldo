@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos Herbalife - Transforme Sua Vida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="herba life.jpg" alt="Herbalife" class="nav-logo">
+                <span class="nav-text">Herbalife</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="produtos.html" class="nav-link active">Produtos</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-cart" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="btn-menu" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Nossos <span class="text-gradient">Produtos</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Descubra nossa linha completa de produtos nutricionais, 
+                    desenvolvidos com ingredientes de alta qualidade para 
+                    transformar sua vida e bem-estar.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                        <span>Ver Produtos</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center" alt="Produtos Herbalife">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Catálogo <span class="text-gradient">Completo</span>
+                </h2>
+                <p class="section-subtitle">
+                    Explore nossa linha completa de produtos nutricionais, 
+                    cada um desenvolvido para atender suas necessidades específicas.
+                </p>
+            </div>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="shake">Shakes</button>
+                <button class="filter-btn" data-filter="tea">Chás</button>
+                <button class="filter-btn" data-filter="vitamin">Vitaminas</button>
+                <button class="filter-btn" data-filter="snack">Lanches</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Produtos serão inseridos via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Por que escolher <span class="text-gradient">Herbalife</span>?
+                </h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>Ingredientes naturais e de alta qualidade, sem conservantes artificiais ou aditivos desnecessários.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Cientificamente Comprovado</h3>
+                    <p>Resultados baseados em pesquisas científicas rigorosas e estudos clínicos independentes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Receba seus produtos em casa com entrega rápida, segura e rastreável em todo o Brasil.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Especializado</h3>
+                    <p>Atendimento especializado 24/7 para tirar suas dúvidas e orientar sobre os produtos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para transformar sua vida?</h2>
+                <p>Comece hoje mesmo sua jornada rumo a uma vida mais saudável e equilibrada</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-lg" onclick="openCart()">
+                        <span>Ver Carrinho</span>
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                        <i class="fas fa-whatsapp"></i>
+                        <span>Falar com Especialista</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="herba life.jpg" alt="Herbalife" class="footer-logo">
+                    <h3>Herbalife</h3>
+                    <p>Transformando vidas através da nutrição equilibrada e bem-estar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="produtos.html">Shakes</a></li>
+                            <li><a href="produtos.html">Chás</a></li>
+                            <li><a href="produtos.html">Vitaminas</a></li>
+                            <li><a href="produtos.html">Lanches</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Garantia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Herbalife. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Carrinho de Compras</h2>
+                <button class="cart-close">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="btn btn-primary btn-lg" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

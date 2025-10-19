@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Herbalife - Transforme Sua Vida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="herba life.jpg" alt="Herbalife" class="nav-logo">
+                <span class="nav-text">Herbalife</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Início</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="contato.html" class="nav-link active">Contato</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-cart" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="btn-menu" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Fale <span class="text-gradient">Conosco</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Estamos aqui para ajudar você a encontrar os melhores produtos 
+                    para suas necessidades. Entre em contato conosco!
+                </p>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=400&h=400&fit=crop&crop=center" alt="Contato Herbalife">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Entre em <span class="text-gradient">Contato</span>
+                </h2>
+                <p class="section-subtitle">
+                    Nossa equipe de especialistas está pronta para ajudar você 
+                    a encontrar os produtos ideais para suas necessidades.
+                </p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefone</h3>
+                                <p>(11) 99999-9999</p>
+                                <small>Segunda a Sexta, 8h às 18h</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>(11) 99999-9999</p>
+                                <small>Atendimento 24/7</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>contato@herbalife.com</p>
+                                <small>Resposta em até 24h</small>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Endereço</h3>
+                                <p>Rua das Flores, 123<br>São Paulo - SP</p>
+                                <small>Atendimento presencial</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Envie sua Mensagem</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecione um assunto</option>
+                                    <option value="produtos">Informações sobre Produtos</option>
+                                    <option value="pedido">Dúvidas sobre Pedido</option>
+                                    <option value="suporte">Suporte Técnico</option>
+                                    <option value="parceria">Parceria</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Perguntas <span class="text-gradient">Frequentes</span>
+                </h2>
+                <p class="section-subtitle">
+                    Encontre respostas para as dúvidas mais comuns sobre nossos produtos
+                </p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como posso fazer um pedido?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Você pode fazer seu pedido através do nosso site, WhatsApp ou telefone. Nossa equipe está pronta para ajudar você a escolher os produtos ideais.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual o prazo de entrega?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo de entrega varia de 3 a 7 dias úteis, dependendo da sua localização. Para São Paulo capital, entregamos em até 2 dias úteis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Os produtos têm garantia?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, todos os nossos produtos têm garantia de qualidade. Se você não ficar satisfeito, oferecemos troca ou devolução em até 30 dias.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Posso cancelar meu pedido?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, você pode cancelar seu pedido até 24 horas após a confirmação. Entre em contato conosco para mais informações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para começar?</h2>
+                <p>Entre em contato conosco e descubra como podemos ajudar você a alcançar seus objetivos</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-lg" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>Falar no WhatsApp</span>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="window.location.href='produtos.html'">
+                        <span>Ver Produtos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="herba life.jpg" alt="Herbalife" class="footer-logo">
+                    <h3>Herbalife</h3>
+                    <p>Transformando vidas através da nutrição equilibrada e bem-estar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="produtos.html">Shakes</a></li>
+                            <li><a href="produtos.html">Chás</a></li>
+                            <li><a href="produtos.html">Vitaminas</a></li>
+                            <li><a href="produtos.html">Lanches</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Garantia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Herbalife. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Carrinho de Compras</h2>
+                <button class="cart-close">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="btn btn-primary btn-lg" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const icon = element.querySelector('i');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+            
+            if (isOpen) {
+                answer.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+        
+        // Contact form
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(this);
+                    const data = Object.fromEntries(formData);
+                    
+                    // Create WhatsApp message
+                    const message = `Olá! Recebi uma mensagem através do site:\n\n` +
+                        `Nome: ${data.name}\n` +
+                        `Email: ${data.email}\n` +
+                        `Telefone: ${data.phone}\n` +
+                        `Assunto: ${data.subject}\n` +
+                        `Mensagem: ${data.message}`;
+                    
+                    const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Show success message
+                    showNotification('Mensagem enviada com sucesso!', 'success');
+                });
+            }
+
+            // FAQ functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const answer = item.querySelector('.faq-answer');
+                    const icon = question.querySelector('i');
+                    
+                    // Close other FAQs
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            const otherAnswer = otherItem.querySelector('.faq-answer');
+                            const otherIcon = otherItem.querySelector('i');
+                            otherAnswer.style.maxHeight = '0px';
+                            otherIcon.style.transform = 'rotate(0deg)';
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current FAQ
+                    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+                    if (isOpen) {
+                        answer.style.maxHeight = '0px';
+                        icon.style.transform = 'rotate(0deg)';
+                        item.classList.remove('active');
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        icon.style.transform = 'rotate(180deg)';
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

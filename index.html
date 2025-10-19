@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbalife - Transforme Sua Vida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="herba life.jpg" alt="Herbalife" class="nav-logo">
+                <span class="nav-text">Herbalife</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Início</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn-cart" id="cartBtn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="btn-menu" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Transforme</span>
+                    <br>Sua Vida
+                </h1>
+                <p class="hero-subtitle">
+                    Descubra o poder da nutrição equilibrada com os produtos Herbalife. 
+                    Energia, bem-estar e resultados reais para uma vida mais saudável.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='produtos.html'">
+                        <span>Ver Produtos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="window.location.href='sobre.html'">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Conhecer Mais</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">90+</div>
+                        <div class="stat-label">Países</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4M+</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop&crop=center" alt="Produtos Herbalife">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="section products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Produtos <span class="text-gradient">Em Destaque</span>
+                </h2>
+                <p class="section-subtitle">
+                    Conheça nossos produtos mais populares e transforme sua rotina diária
+                </p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Fórmula 1" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Shakes</div>
+                        <h3 class="product-name">Fórmula 1 - Shake Nutritivo</h3>
+                        <p class="product-description">Shake nutritivo com proteína de soja, vitaminas e minerais essenciais para uma alimentação equilibrada.</p>
+                        <div class="product-price">R$ 89,90</div>
+                        <button class="add-to-cart" onclick="addToCart(1)">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&h=300&fit=crop&crop=center" alt="Chá Concentrado" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Chás</div>
+                        <h3 class="product-name">Chá Concentrado</h3>
+                        <p class="product-description">Chá concentrado com extratos naturais para energia e bem-estar ao longo do dia.</p>
+                        <div class="product-price">R$ 45,90</div>
+                        <button class="add-to-cart" onclick="addToCart(2)">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&h=300&fit=crop&crop=center" alt="Multivitamínico" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Vitaminas</div>
+                        <h3 class="product-name">Multivitamínico</h3>
+                        <p class="product-description">Complexo vitamínico completo para suporte nutricional diário e fortalecimento do sistema imunológico.</p>
+                        <div class="product-price">R$ 67,50</div>
+                        <button class="add-to-cart" onclick="addToCart(3)">
+                            <i class="fas fa-shopping-cart"></i>
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-primary btn-lg" onclick="window.location.href='produtos.html'">
+                    <span>Ver Todos os Produtos</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Por que escolher <span class="text-gradient">Herbalife</span>?
+                </h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Natural</h3>
+                    <p>Ingredientes naturais e de alta qualidade, sem conservantes artificiais ou aditivos desnecessários.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Cientificamente Comprovado</h3>
+                    <p>Resultados baseados em pesquisas científicas rigorosas e estudos clínicos independentes.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Receba seus produtos em casa com entrega rápida, segura e rastreável em todo o Brasil.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Especializado</h3>
+                    <p>Atendimento especializado 24/7 para tirar suas dúvidas e orientar sobre os produtos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    O que nossos <span class="text-gradient">clientes</span> dizem
+                </h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Os shakes da Herbalife mudaram completamente minha rotina. Perdi 15kg em 3 meses e me sinto muito mais energética!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face" alt="Maria Silva">
+                            <div class="author-info">
+                                <h4>Maria Silva</h4>
+                                <span>Cliente há 2 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"O chá da Herbalife me ajuda a manter o foco durante o trabalho. É delicioso e me dá energia natural!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="João Santos">
+                            <div class="author-info">
+                                <h4>João Santos</h4>
+                                <span>Cliente há 1 ano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"As vitaminas da Herbalife completaram minha alimentação. Nunca me senti tão saudável e disposta!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Ana Costa">
+                            <div class="author-info">
+                                <h4>Ana Costa</h4>
+                                <span>Cliente há 6 meses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="cta-bg">
+            <div class="cta-shape shape-1"></div>
+            <div class="cta-shape shape-2"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para começar sua jornada?</h2>
+                <p>Junte-se a milhões de pessoas que já transformaram suas vidas com a Herbalife</p>
+                <div class="cta-actions">
+                    <button class="btn btn-primary btn-lg" onclick="window.location.href='produtos.html'">
+                        <span>Ver Produtos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                        <i class="fas fa-whatsapp"></i>
+                        <span>Falar com Especialista</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="herba life.jpg" alt="Herbalife" class="footer-logo">
+                    <h3>Herbalife</h3>
+                    <p>Transformando vidas através da nutrição equilibrada e bem-estar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="produtos.html">Shakes</a></li>
+                            <li><a href="produtos.html">Chás</a></li>
+                            <li><a href="produtos.html">Vitaminas</a></li>
+                            <li><a href="produtos.html">Lanches</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="sobre.html">Sobre Nós</a></li>
+                            <li><a href="#">Carreiras</a></li>
+                            <li><a href="#">Imprensa</a></li>
+                            <li><a href="#">Sustentabilidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#">Central de Ajuda</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Garantia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Herbalife. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Carrinho de Compras</h2>
+                <button class="cart-close">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Itens do carrinho -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: R$ <span id="cartTotal">0,00</span></strong>
+                </div>
+                <button class="btn btn-primary btn-lg" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
