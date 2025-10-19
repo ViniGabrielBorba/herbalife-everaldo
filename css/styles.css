@@ -290,6 +290,7 @@ body {
     position: relative;
     background: var(--gradient-hero);
     overflow: hidden;
+    padding-top: 80px; /* Espaço para o header fixo */
 }
 
 .hero-bg {
@@ -1104,7 +1105,11 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--space-12);
-        padding: var(--space-16) var(--space-4);
+        padding: var(--space-20) var(--space-4) var(--space-16);
+    }
+
+    .hero {
+        padding-top: 100px; /* Mais espaço no mobile para o header */
     }
 
     .hero-title {
@@ -1234,7 +1239,11 @@ body {
     }
 
     .hero-content {
-        padding: var(--space-12) var(--space-3);
+        padding: var(--space-20) var(--space-3) var(--space-12);
+    }
+
+    .hero {
+        padding-top: 90px; /* Espaço adequado para mobile pequeno */
     }
 
     .hero-title {
